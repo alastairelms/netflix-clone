@@ -1,12 +1,9 @@
 import React from 'react';
-import Jumbotron from '../components/jumbotron/index.js';
+import JumbotronContainer from '../containers/jumbotron';
 
-function Home() {
+
+export function Home() {
     return (
-        <Jumbotron.Container>
-            <p>Hello</p>
-        </Jumbotron.Container>
+        <JumbotronContainer />
     )
 }
-
-export { Home }
