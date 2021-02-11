@@ -17,12 +17,11 @@ const config = {
 // import { seedDatabase } from './seed';
 
 ReactDOM.render(
-    <>
-        <FirebaseContext.Provider value={{ firebase: window.firebase }}>
-            <GlobalStyles />
-            <App />
-        </FirebaseContext.Provider>
-    </>, 
+    
+    <FirebaseContext.Provider value={{ firebase: window.firebase }}>
+        <GlobalStyles />
+        <App />
+    </FirebaseContext.Provider>,
     document.getElementById('root')
 );
 

@@ -3,16 +3,15 @@ import { Form } from '../components';
 import { HeaderContainer } from '../containers/header';
 
 export default function Signin() {
-
-    const [error, setError ] = useState('');
+    const [error, setError] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
+
+    const isInvalid = password === '' || emailAddress === '';
 
     const handleSignin = (event) => {
         event.preventDefault();
     }
-
-
 
     return (
         <HeaderContainer>
@@ -33,7 +32,7 @@ export default function Signin() {
                         placeholder="Password"
                         onChange={({ target }) => setPassword(target.value)}
                     />
-                    <Form.Submit disabled={false} type="submit">
+                    <Form.Submit disabled={isInvalid} type="submit">
                         Sign In
                     </Form.Submit>
 
