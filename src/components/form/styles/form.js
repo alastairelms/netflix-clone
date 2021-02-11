@@ -52,13 +52,7 @@ export const TextSmall = styled.h2`
     color: #8c8c8c;
 `;
 
-export const Link = styled(ReachRouterLink)`
-    color: #fff;
-    text-decoration: none;
-    
-    &:hover {
-        text-decoration: underline;
-    }
+export const Link = styled.span`
 `;
 
 export const Input = styled.input`

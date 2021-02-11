@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Form } from '../components';
 import { HeaderContainer } from '../containers/header';
 
@@ -37,7 +38,7 @@ export default function Signin() {
                     </Form.Submit>
 
                     <Form.Text>
-                        New to Netflix? <Form.Link to='/signup'>Sign up now.</Form.Link>
+                        New to Netflix? <Link to='/signup'>Sign up now.</Link>
                     </Form.Text>
                     <Form.TextSmall>
                         This page is protected by Google reCAPTCHA.
