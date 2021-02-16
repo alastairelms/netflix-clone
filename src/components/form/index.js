@@ -22,7 +22,7 @@ Form.TextSmall = function FormTextSmall({ children, ...restProps }) {
 }
 
 Form.Link = function FormLink({ children, ...restProps }) {
-    return <FormLink {...restProps}>{children}</FormLink>;
+    return <Link {...restProps}>{children}</Link>;
 }
 
 Form.Error = function FormError({ children, ...restProps }) {

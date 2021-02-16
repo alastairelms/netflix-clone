@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Form } from '../components';
 import { HeaderContainer } from '../containers/header';
+import { FooterContainer } from '../containers/footer';
 
 export default function Signin() {
     const [error, setError] = useState('');
@@ -15,6 +16,7 @@ export default function Signin() {
     }
 
     return (
+        <>
         <HeaderContainer>
             <Form>
                 <Form.Title>Sign In</Form.Title>
@@ -38,7 +40,7 @@ export default function Signin() {
                     </Form.Submit>
 
                     <Form.Text>
-                        New to Netflix? <Link to='/signup'>Sign up now.</Link>
+                        New to Netflix? <Form.Link to='/signup'>Sign up now.</Form.Link>
                     </Form.Text>
                     <Form.TextSmall>
                         This page is protected by Google reCAPTCHA.
@@ -46,5 +48,7 @@ export default function Signin() {
                 </Form.Base>
             </Form>
         </HeaderContainer>
+        <FooterContainer />
+        </>
     )
 }

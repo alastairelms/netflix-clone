@@ -52,7 +52,13 @@ export const TextSmall = styled.h2`
     color: #8c8c8c;
 `;
 
-export const Link = styled.span`
+export const Link = styled(ReachRouterLink)`
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 `;
 
 export const Input = styled.input`
@@ -63,7 +69,7 @@ export const Input = styled.input`
     height: 50px;
     line-height: 50px;
     padding: 5px 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 
     &:last-of-type {
         margin-bottom: 30px;
